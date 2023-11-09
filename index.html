@@ -25,64 +25,52 @@
     <title>Vanilla sky</title>
   </head>
   <body>
-    <div class="container">
-      <div class="weather">
-        <!-- //-----------------------------header -->
-        <div class="row">
-          <div class="col-8">
-            <h1>
-              Weather
-              <i class="fa-solid fa-city"></i>
-            </h1>
+    <div class="weather-app">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            id="search-form-input"
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city"></h1>
+            <p class="weather-app-details">
+              <span id="time"></span>,
+              <span id="description"></span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
+            </p>
           </div>
-
-          <div class="col-4 location">
-            <button type="button" class="btn btn-dark" id="posicion">
-              <i class="fa-solid fa-location-dot"></i>
-            </button>
-          </div>
-        </div>
-        <!-- //-----------------------------header -->
-
-        <div class="col-8">
-          <ul>
-            <li>
-              <span id="city"><h2>Turre</h2></span>
-            </li>
-            <li><span id="time"> CurrentTime </span></li>
-            <li><span id="condition">Clearly</span></li>
-          </ul>
-
-          <div class="row">
-            <div class="col-6">
-              <img src="img/partly_cloudy.png" alt="partly_cloudy" />
-              <span class="temperature" id="temperature">23</span>
-              <span class="units">
-                <a href="#" id="celsius-link">°C</a> |
-                <a href="#" id="fahrenheit-link">°F</a>
-              </span>
-            </div>
-
-            <div class="col-6">
-              <ul class="details">
-                <li>Humidity: <span id="humidity"> 45 </span>%</li>
-                <li>Wind: <span id="wind"> 3 </span>m/s</li>
-                <li><span id="description"> cloudy... </span></li>
-              </ul>
-            </div>
+          <div class="weather-app-temperature-container">
+            <div id="icon"></div>
+            <div class="weather-app-temperature" id="temperature"></div>
+            <div class="weatehr-app-unit">°C</div>
           </div>
         </div>
-      </div>
-      <small>
-        <a
-          href="https://github.com/Tuluman/weather"
-          class="footer"
-          target="_blank"
+      </main>
+
+      <footer>
+        This project was coded by
+        <a href="https://github.com/Tuluman" target="_blank"> Coded by me...</a
+        >, is
+        <a href="https://github.com/Tuluman" target="_blank"
+          >open-sourced on GitHub</a
         >
-          Coded by me...
-        </a>
-      </small>
-      <script src="src/code.js"></script>
+        and
+        <a href="https://vailla-sky.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
     </div>
+    <script src="src/code.js"></script>
   </body>
 </html>

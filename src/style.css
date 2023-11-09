@@ -1,12 +1,57 @@
-.weather {
-  max-width: 600px;
-  min-width: 350px;
-  margin: 30px auto;
-  padding: 20px;
-  border: 1px solid #dadde1;
+.container {
+  margin-top: 40px;
+  padding: 40px;
+  width: 520px;
   border-radius: 4px;
+  border-style: ridge;
+}
+form {
+  display: block;
+  width: auto;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.icon-city {
+  text-align: right;
+}
+p {
+  margin: 0;
+}
+h1 {
+  margin-bottom: 28px;
+}
+.units {
+  font-size: 28px;
+}
+footer {
+  text-align: center;
+}
+.footer {
+  text-decoration: none;
+  color: black;
+}
+.card-header {
+  padding: auto;
+}
+.colw {
+  font-size: 12px;
+  padding: 5px;
 }
 
-h1 {
-  color: black;
+.iconw {
+  width: 21px;
+}
+.foterw {
+  text-align: left;
+}
+.time {
+  font-size: large;
+}
+input,
+button {
+  font-size: 21px;
+  background-color: #f8f8f8;
+  border-color: #f8f8f8;
+  border-radius: 4px;
+  border-style: ridge;
 }
