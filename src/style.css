@@ -19,11 +19,12 @@ a {
 header {
   border-bottom: 1px solid #f9f7fe;
   padding: 0 0 30px 0;
+  border-color: darkred;
 }
 
 .search-form-input {
   background-color: #f9f7fe;
-  border: none;
+  border-color: darkred;
   border-radius: 6px;
   width: 75%;
   font-size: 16px;
@@ -101,8 +102,10 @@ main {
 }
 
 .weather-forecast-icon {
-  font-size: 32px;
-  text-align: center;
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: 0 auto;
 }
 .weather-forecast-temperatures {
   text-align: center;
@@ -116,9 +119,6 @@ main {
 .weather-forecast-temperature {
   padding: 0 10px;
 }
-.weather-forecast-temperature-min {
-  opacity: 0.8;
-}
 
 footer {
   border-top: 1px solid #f9f7fe;
@@ -126,4 +126,5 @@ footer {
   text-align: center;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.6);
+  border-color: darkred;
 }
